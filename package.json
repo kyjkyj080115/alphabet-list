@@ -1,18 +1,30 @@
 {
   "name": "alphabet-list",
-  "version": "1.0.0",
-  "description": "show english, korean and number of option",
+  "version": "1.0.2",
+  "description": "show english, korean and number list",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kyjkyj080115"
+    "url": "git+https://github.com/kyjkyj080115/alphabet-list.git"
   },
-  "author": "waffle",
+  "author": "waffle5140",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.28.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kyjkyj080115/alphabet-list/issues"
+  },
+  "homepage": "https://github.com/kyjkyj080115/alphabet-list#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "alphabet-list",
+    "alphabet",
+    "list"
+  ]
 }
