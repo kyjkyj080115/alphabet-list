@@ -1,10 +1,20 @@
-const { enlist, numlist, kolist } = require("./index");
+const {enlist, numlist, kolist} = require(".."),
+  option1 = {
+    small: true,
+    big: true
+  },
+  option2 = {
+    min: 0,
+    max: 10
+  },
+  option3 = {
+    consonant: true,
+    vowel: true,
+    double: true
+  };
 
-const option1 = {
-  small: true,
-  big: true,
-};
 console.log(enlist(option1));
+
 /*
 [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
@@ -17,10 +27,6 @@ console.log(enlist(option1));
 ]
 */
 
-const option2 = {
-  min: 0,
-  max: 10,
-};
 console.log(numlist(option2));
 
 /*
@@ -31,11 +37,6 @@ console.log(numlist(option2));
 ]
 */
 
-const option3 = {
-  consonant: true,
-  vowel: true,
-  double: true,
-};
 console.log(kolist(option3));
 
 /*

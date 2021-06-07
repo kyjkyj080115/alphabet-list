@@ -1,4 +1,5 @@
 # alphabet-list
+
 [![NPM](https://img.shields.io/npm/v/alphabet-list?color=red)](https://www.npmjs.com/package/alphabet-list)
 [![NPM](https://img.shields.io/npm/l/alphabet-list)](https://www.npmjs.com/package/alphabet-list)
 
@@ -11,10 +12,10 @@
 ---
 ### 영어 
 
-|옵션|속성|속성|기본|
-|------|---|---|---|
-|small?|True|False|False|
-|big?|True|False|False|
+|옵션|타입|기본|
+|---|---|---|
+|small?|boolean|False|
+|big?|boolean|False|
 
 ## test
 ```js
@@ -42,7 +43,7 @@ console.log(enlist(option));
 ---
 ### 숫자
 
-|옵션|속성|제한|기본|
+|옵션|타입|제한|기본|
 |------|---|---|---|
 |min?|Number|0이상|0|
 |max?|Number|제한 없음|50|
@@ -67,11 +68,11 @@ console.log(numlist(option));
 ```
 ### 한글
 
-|옵션|속성|속성|기본|
-|------|---|---|---|
-|consonant?|True|False|False|
-|vowel?|True|False|False|
-|double?|True|False|False|
+|옵션|타입|기본|
+|---|---|---|
+|consonant?|boolean|False|
+|vowel?|boolean|False|
+|double?|boolean|False|
 ## test
 ```js
 const { kolist } = require("alphabet-list");
