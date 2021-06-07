@@ -1,4 +1,9 @@
 # alphabet-list
+[![NPM](https://img.shields.io/npm/v/alphabet-list?color=red)](https://www.npmjs.com/package/alphabet-list)
+[![NPM](https://img.shields.io/npm/l/alphabet-list)](https://www.npmjs.com/package/alphabet-list)
+
+[![NPM](https://nodei.co/npm/alphabet-list.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/alphabet-list/)
+
 
 ## 영어, 숫자, 한글을 옵션에 따라, 자유롭게
 ---
