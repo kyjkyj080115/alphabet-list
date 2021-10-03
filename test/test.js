@@ -1,20 +1,11 @@
-const {enlist, numlist, kolist} = require(".."),
-  option1 = {
-    small: true,
-    big: true
-  },
-  option2 = {
-    min: 0,
-    max: 10
-  },
-  option3 = {
-    consonant: true,
-    vowel: true,
-    double: true
-  };
+const alphabet_list = require("..");
 
-console.log(enlist(option1));
-
+let option = {
+  small: true,
+  big: true
+}
+const enlist = alphabet_list.enlist(option)
+console.log(enlist);
 /*
 [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
@@ -26,8 +17,12 @@ console.log(enlist(option1));
   'W', 'X', 'Y', 'Z'
 ]
 */
-
-console.log(numlist(option2));
+option = {
+  min: 0,
+  max: 10
+}
+const numlist = alphabet_list.numlist(option)
+console.log(numlist);
 
 /*
 [
@@ -36,8 +31,13 @@ console.log(numlist(option2));
     10
 ]
 */
-
-console.log(kolist(option3));
+option = {
+  consonant: true,
+  double: true,
+  vowel:true
+}
+const kolist = alphabet_list.kolist(option)
+console.log(kolist);
 
 /*
 [
@@ -50,3 +50,6 @@ console.log(kolist(option3));
   'ㅆ', 'ㅉ'
 ]
 */
+
+console.log(alphabet_list.version)
+// 'now version'
