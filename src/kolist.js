@@ -4,9 +4,9 @@ function kolist(option) {
   if (typeof option !== "object")
     throw new TypeError("Option type must be object");
   if (
-    typeof option.consonant !== "boolean" ||
-    typeof option.vowel !== "boolean" ||
-    typeof option.double !== "boolean"
+    option.consonant !== undefined && typeof option.consonant !== "boolean" ||
+    option.vowel !== undefined && typeof option.vowel !== "boolean" ||
+    option.double !== undefined && typeof option.double !== "boolean"
   )
     throw new TypeError(`option of small and big's type must be boolean`);
   let list = [];

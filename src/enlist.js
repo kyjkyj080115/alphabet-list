@@ -3,8 +3,13 @@
 function enlist(option) {
   if (typeof option !== "object")
     throw new TypeError("Option type must be object");
-  if (typeof option.small !== "boolean" || typeof option.big !== "boolean")
-    throw new TypeError(`option of small and big's type must be boolean`);
+  if (
+    (option.small !== undefined && typeof option.small !== "boolean") ||
+    (option.big !== undefined && typeof option.big !== "boolean")
+  )
+    throw new TypeError(
+      `option of small and big's type must be undefined or boolean`
+    );
   let list = [];
   switch (option.small) {
     case true:
@@ -31,4 +36,4 @@ function enlist(option) {
   return list;
 }
 
-module.exports.enlist = enlist
+module.exports.enlist = enlist;

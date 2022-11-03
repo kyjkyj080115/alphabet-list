@@ -3,9 +3,11 @@
 function numlist(option) {
   if (typeof option !== "object")
     throw new TypeError("Option type must be object");
-  if (typeof option.min !== "number" || typeof option.max !== "number")
-    throw new TypeError(`option of small and big's type must be boolean`);
-  if (option.min < 0) throw new Error(`min number must be more than "0"`);
+  if (
+    (option.min !== undefined && typeof option.min !== "number") ||
+    (option.max !== undefined && typeof option.max !== "number")
+  )
+    throw new TypeError(`option of min and big's type must be number`);
   let list = [];
   if (option?.min == undefined) option.min = 0;
   if (option?.max == undefined) option.max = 50;
@@ -15,4 +17,4 @@ function numlist(option) {
   return list;
 }
 
-module.exports.numlist = numlist
+module.exports.numlist = numlist;
