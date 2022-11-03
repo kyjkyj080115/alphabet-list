@@ -7,9 +7,7 @@ function enlist(option) {
     (option.small !== undefined && typeof option.small !== "boolean") ||
     (option.big !== undefined && typeof option.big !== "boolean")
   )
-    throw new TypeError(
-      `option of small and big's type must be undefined or boolean`
-    );
+    throw new TypeError(`option of small and big's type must be undefined or boolean`);
   let list = [];
   switch (option.small) {
     case true:
